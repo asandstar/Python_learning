@@ -1,0 +1,20 @@
+#1）创建两个一维数组分别储存超市名称和水果名称
+import numpy as np
+names=np.array(['大润发','沃尔玛','好德','农工商'])
+fruits=np.array(['苹果','香蕉','橘子','芒果'])
+#2)创建一个4*4的二维数组存储不同超市的水果价格，价格由4~10范围内随机数生成
+prices=np.random.randint(4,11,size=(4,4))
+print(prices)
+#3）选“大润发”的苹果和“好德”的香蕉，将价格增加1元
+a=prices[names=='大润发',fruits=='苹果']+1
+b=prices[names=='好德',fruits=='香蕉']+1
+print(a,b)
+#4）“农工商”所有水果价格减2元
+c=prices[(names=='农工商')]-2
+print(c)
+#5）统计四个超市苹果和芒果的销售均价
+d=prices[(fruits=='苹果')].mean()
+e=prices[(fruits=='芒果')].mean()
+print(d,e)
+#6）找出橘子价格最贵的超市名称/非编号
+print(names[prices[fruits=='橘子'].argmax()])
