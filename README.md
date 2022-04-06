@@ -1,3 +1,8 @@
+# update
+# P4E
+密歇根大学 python for everyone
+第一门课太简单了就直接用网页editor
+第二门才在vscode上反复调试
 # Python
 数据分析与智能计算（老师：张军英）  
 必须狠狠纪念一下这位优秀的女教师，比之前c语言老师教的好多了呜呜呜  
